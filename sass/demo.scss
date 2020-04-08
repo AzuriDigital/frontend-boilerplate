@@ -1,0 +1,28 @@
+@use 'settings' as *;
+
+.intro {
+  margin: 0 0 60px;
+  background-color: $brand-primary;
+  color: $brand-white;
+  padding: 40px 0;
+
+  &__asset {
+    max-width: 300px;
+    margin-bottom: 40px;
+  }
+}
+
+.block {
+  margin-bottom: 35px;
+
+  &__header {
+    background-color: #f6f8fa;
+    border-radius: 2px;
+    padding: 15px;
+    margin-bottom: 25px;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

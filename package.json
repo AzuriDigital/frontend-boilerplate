@@ -1,0 +1,75 @@
+{
+  "name": "azuri",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/AzuriDigital",
+  "author": "AzuriDigital",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel index.html -p 8000",
+    "build": "parcel build index.html",
+    "prebuild": "rimraf dist",
+    "stylelint": "./node_modules/.bin/stylelint \"**/*.scss\" --syntax scss"
+  },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Edge versions",
+    "last 2 firefox versions",
+    "iOS 10",
+    "iOS 11",
+    "last 3 ChromeAndroid versions",
+    "last 2 Safari versions"
+  ],
+  "engines": {
+    "node": ">=12.6.1",
+    "npm": ">=6.5.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "@babel/plugin-transform-object-assign": "^7.8.3",
+    "@babel/polyfill": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-bundle-visualiser": "^1.2.0",
+    "postcss-import": "^12.0.1",
+    "sass": "^1.26.1"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.7.4",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "postcss-flexbugs-fixes": "^4.2.0",
+    "postcss-normalize": "^8.0.1",
+    "postcss-pxtorem": "^4.0.1",
+    "rimraf": "^3.0.2",
+    "sass-mq": "^5.0.1",
+    "stylelint": "^13.2.1",
+    "stylelint-scss": "^3.16.0"
+  },
+  "postcss": {
+    "modules": false,
+    "plugins": {
+      "postcss-import": {
+        "postcss-normalize": {
+          "postcss-import": {
+            "forceImport": false
+          }
+        }
+      },
+      "postcss-flexbugs-fixes": {},
+      "postcss-pxtorem": {
+        "rootValue": 16,
+        "propList": [
+          "*",
+          "!letter-spacing",
+          "!border*",
+          "!text-indent"
+        ],
+        "mediaQuery": true
+      }
+    }
+  }
+}

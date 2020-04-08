@@ -1,0 +1,59 @@
+@use 'settings' as *;
+@use 'helpers/mixins' as mx;
+
+$all-text-inputs: 'input[type="color"]',
+  'input[type="date"]',
+  'input[type="datetime"]',
+  'input[type="datetime-local"]',
+  'input[type="email"]',
+  'input[type="month"]',
+  'input[type="number"]',
+  'input[type="password"]',
+  'input[type="search"]',
+  'input[type="tel"]',
+  'input[type="text"]',
+  'input[type="time"]',
+  'input[type="url"]',
+  'input[type="week"]',
+  'input:not([type])';
+
+@mixin az-field-padding {
+  padding: 10px;
+}
+
+fieldset {
+  text-align: left;
+  border: 0;
+  margin: 0;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+  display: block;
+}
+
+legend {
+  border: 0;
+}
+
+label,
+.label {
+  @include mx.az-font-weight(regular);
+  display: block;
+  margin-bottom: 10px;
+  color: currentColor;
+}
+
+input,
+textarea {
+  @include mx.az-property-placeholder() {
+    @include mx.az-font-weight(regular);
+    font-family: $font-family-primary;
+    color: $brand-black;
+    opacity: 1;
+    font-size: 16px;
+  }
+}
+
+.field-container {
+  margin-bottom: 40px;
+}

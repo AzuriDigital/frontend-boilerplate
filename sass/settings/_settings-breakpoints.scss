@@ -1,0 +1,31 @@
+// Sass-mq configuration - please see https://github.com/sass-mq/sass-mq for more infos
+
+// Enable media queries support
+$mq-responsive: true;
+
+// Breakpoints list
+$mq-breakpoints: (
+  xs: 480px, // max
+  sm: 767px, // max
+  md:  768px,
+  lg: 1025px,
+  xl: 1240px,
+  xxl: 1472px,
+);
+
+// Padding on either side of the main container
+$site-wide-padding: 30px;
+
+// Width of the main container
+$desktop-width: map-get($mq-breakpoints, 'xl');
+$site-width: $desktop-width + ( $site-wide-padding * 2 );
+$site-width-small: 1260px - ( $site-wide-padding * 2 );
+
+$global-side-padding: 25px;
+
+@use 'node_modules/sass-mq/mq' with (
+  $mq-responsive: $mq-responsive,
+  $mq-breakpoints: $mq-breakpoints
+);
+
+@forward 'node_modules/sass-mq/mq';

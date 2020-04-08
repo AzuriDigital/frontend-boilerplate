@@ -1,0 +1,22 @@
+@use 'settings' as *;
+@use 'components/form-core' as form;
+
+.form-input {
+  @include form.az-field-padding;
+  font-family: $font-family-primary;
+  border-radius: 0;
+  display: block;
+  line-height: normal;
+  -webkit-appearance: none;
+  border: none;
+  border-bottom: 1px solid $brand-grey-light;
+  width: 100%;
+  transition: border .3s ease;
+  color: $brand-black;
+
+  &:focus {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $brand-primary;
+  }
+}

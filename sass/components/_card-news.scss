@@ -1,0 +1,161 @@
+.card-news-listing {
+  > [data-sal], > .card-news__item { // Added Item Class as data-sal isn't used in React Elements
+    &:not(:first-child) {
+      .card-news {
+        margin-top: $global-side-padding;
+
+        @include mq( xl ) {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+
+  > .card-news {
+    &:not(:first-child) {
+      margin-top: $global-side-padding;
+
+      @include mq( xl ) {
+        margin-top: 50px;
+      }
+    }
+  }
+}
+
+.card-news-listing-mb {
+  margin-bottom: 50px;
+
+  @include mq( xl ) {
+    margin-bottom: 100px;
+  }
+}
+
+.card-news {
+  position: relative; // Used to attach the tag at the top of the card
+  margin: 30px 0;
+
+  .grid-column & {
+    margin: 0;
+  }
+  @include mq( md ) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .grid-container & {
+    @include mq( md ) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @include mq( lg ) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  &.mdc-card {
+    background-color: transparent;
+
+    .mdc-card__primary-action {
+      width: 100%;
+      flex-shrink: 0;
+
+      @include mq( md ) {
+        max-width: 560px;
+      }
+
+      .grid-container & {
+        @include mq( lg ) {
+          max-width: 275px;
+        }
+      }
+    }
+  }
+
+  .card__asset {
+    @include az-aspect-ratio(680,1120);
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    @include mq( md ) {
+      max-width: 560px;
+    }
+
+    .grid-container & {
+      @include mq( lg ) {
+        max-width: 275px;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .card__content {
+    padding: 15px 0;
+
+    @include mq( md ) {
+      padding: 15px $global-side-padding;
+    }
+
+    @include mq( xl ) {
+      padding: 30px 60px;
+    }
+
+    .grid-container & {
+      padding: 20px 0;
+
+      @include mq( lg ) {
+        padding: 0 20px;
+      }
+    }
+  }
+
+  .card__meta {
+    color: $brand-grey-medium;
+    line-height: 12px;
+    margin-bottom: 15px;
+  }
+
+  .title {
+    font-family: $base-font-family;
+    @include az-font-weight(bold);
+
+    @include mq( xl ) {
+      font-size: 30px;
+      line-height: 44px;
+    }
+
+    .grid-container & {
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .card__text p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.card-news--align-bottom {
+  .card__content {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    flex-basis: 100%;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+
+    .btn {
+      align-self: flex-start;
+    }
+  }
+}

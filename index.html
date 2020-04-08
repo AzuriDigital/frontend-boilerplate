@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./sass/main.scss" />
+    <link rel="stylesheet" href="./sass/demo.scss" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <main>
+      
+      <div class="intro">
+        <section class="site-wide site-wide--small">
+          <div class="intro__asset">
+            <img src="./img/svg/logo.svg" alt="Azuri logo">
+          </div>
+          <div class="intro__content">
+            <h1>Frontend boilerplate</h1>
+            <p>This project is a personal Frontend boilerplate. For more details please checkout the github page: 
+              <a href="https://github.com/AzuriDigital/frontend-boilerplate/" target="_blank" rel="noopener noreferrer">Frontend boilerplate</a></p>
+          </div>
+        </section>
+      </div>
+
+      <section class="site-wide site-wide--small">
+        <div class="block block--typography">
+          <div class="block__header">
+            <p><strong>Title example - </strong>using <em>h</em> tag</p>
+          </div>
+
+          <h1>Title h1</h1>
+          <h2>Title h2</h2>
+          <h3>Title h3</h3>
+          <h4>Title h4</h4>
+          <h5>Title h5</h5>
+        </div>
+      </section>
+
+      <section class="site-wide site-wide--small">
+        <div class="block block--typography">
+          <div class="block__header">
+            <p><strong>Title example style - </strong>using <em>p</em> tag</p>
+          </div>
+          <p class="h1">Title h1</p>
+          <p class="h2">Title h2</p>
+          <p class="h3">Title h3</p>
+          <p class="h4">Title h4</p>
+          <p class="h5">Title h5</p>
+        </div>
+      </section>
+
+      <section class="site-wide site-wide--small">
+        <div class="block__header">
+          <p><strong>Paragraph example</strong></p>
+        </div>
+        <div class="block block--paragraph">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum magni
+            vero temporibus non quas accusantium tenetur dicta laboriosam aut
+            praesentium explicabo fugit error nemo recusandae repellendus amet
+            harum accusamus eligendi minima, quam ipsum. Repellendus
+            repudiandae, officiis id amet consectetur quidem consequuntur dolore
+            aliquid necessitatibus quos iusto enim dolores accusamus asperiores.
+          </p>
+        </div>
+      </section>
+
+      <section class="site-wide site-wide--small">
+        <div class="block block--blockquote">
+          <div class="block__header">
+            <p><strong>Blockquote example</strong></p>
+          </div>
+
+          <blockquote class="blockquote blockquote--mark">
+            <div class="blockquote__inner">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum
+                et consectetur porro omnis at laudantium amet placeat vitae unde
+                voluptas debitis quos expedita blanditiis, dignissimos ipsam
+                necessitatibus neque nostrum. Praesentium!
+              </p>
+            </div>
+            <footer class="text-small-caps">Lorem, ipsum dolor.</footer>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="site-wide site-wide--small">
+        <div class="block block--list">
+          <div class="block__header">
+            <p><strong>Unordered List example</strong></p>
+          </div>
+          <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+            <li>List item 4</li>
+            <li>List item 5</li>
+            <li>List item 6</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="site-wide site-wide--small">
+        <div class="block block--list">
+          <div class="block__header">
+            <p><strong>Ordered list example</strong></p>
+          </div>
+          <ol>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+            <li>List item 4</li>
+            <li>List item 5</li>
+            <li>List item 6</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="site-wide site-wide--small">
+        <div class="block block--list">
+          <div class="block__header">
+            <p><strong>Unordered list example - </strong>with margin reset</p>
+          </div>
+          <ul class="reset-list">
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+            <li>List item 4</li>
+            <li>List item 5</li>
+            <li>List item 6</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="site-wide site-wide--small">
+        <div class="block block--buttons">
+          <div class="block__header">
+            <p><strong>Button example</strong></p>
+          </div>
+
+          <button class="btn btn-primary" type="button" name="button">
+            <span class="btn__text">Button</span>
+          </button>
+
+          <button class="btn btn-primary" type="button" name="button" disabled>
+            <span class="btn__text">Button</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="site-wide site-wide--small">
+        <div class="block block--buttons">
+          <div class="block__header">
+            <p><strong>Button example - </strong>using <em>a</em> link tag</p>
+          </div>
+
+          <a class="btn btn-primary" href="">
+            <span class="btn__text">Button</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="site-wide site-wide--small">
+        <div class="block block--buttons">
+          <div class="block__header">
+            <p><strong>Button example - </strong>using a <em>input</em> tag</p>
+          </div>
+
+          <input class="btn btn-primary" type="submit" value="Button" />
+        </div>
+      </section>
+
+      <section class="site-wide site-wide--small">
+        <div class="block block--grid">
+          <div class="block__header">
+            <p><strong>Grid example</strong></p>
+          </div>
+
+          <div class="grid grid-cols-2">
+            <div class="grid-col">
+              <div class="spacer">
+                grid-col
+              </div>
+            </div>
+            <div class="grid-col">
+              <div class="spacer">
+                grid-col
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-3">
+            <div class="grid-col">
+              <div class="spacer">
+                grid-col
+              </div>
+            </div>
+            <div class="grid-col">
+              <div class="spacer">
+                grid-col
+              </div>
+            </div>
+            <div class="grid-col">
+              <div class="spacer">
+                grid-col
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-4">
+            <div class="grid-col">
+              <div class="spacer">
+                grid-col
+              </div>
+            </div>
+            <div class="grid-col">
+              <div class="spacer">
+                grid-col
+              </div>
+            </div>
+            <div class="grid-col">
+              <div class="spacer">
+                grid-col
+              </div>
+            </div>
+            <div class="grid-col">
+              <div class="spacer">
+                grid-col
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="site-wide site-wide--small">
+        <div class="block block--form">
+          <div class="block__header">
+            <p><strong>Form example - </strong>input text</p>
+          </div>
+          <div class="field-container">
+            <label for="input-text-id" class="label">Label</label>
+
+            <input
+              autocomplete="off"
+              type="text"
+              id="input-text-id"
+              placeholder="placeholder text"
+              class="form-input"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="site-wide site-wide--small">
+        <div class="block block--form">
+          <div class="block__header">
+            <p><strong>Form example - </strong>input text with validation</p>
+          </div>
+          <div class="field-container is-not-valid">
+            <label for="input-text-id-2" class="label">Label</label>
+
+            <input
+              autocomplete="off"
+              type="text"
+              id="input-text-id-2"
+              placeholder="placeholder text"
+              class="form-input"
+            />
+
+            <div class="validation-message">
+              <p>error message here</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="site-wide site-wide--small">
+        <div class="block block--form">
+          <div class="block__header">
+            <p><strong>Form example - </strong>textarea</p>
+          </div>
+          <div class="field-container">
+            <label for="textarea-id" class="label">Label</label>
+            <textarea
+              class="form-textarea"
+              name="textarea-name"
+              id="textarea-id"
+              placeholder="placeholder text"
+            ></textarea>
+          </div>
+        </div>
+      </section>
+
+      <section class="site-wide site-wide--small">
+        <div class="block block--form">
+          <div class="block__header">
+            <p><strong>Form example - </strong>textarea with validation</p>
+          </div>
+          <div class="field-container is-not-valid">
+            <label for="textarea-id-2" class="label">Label</label>
+            <textarea
+              class="form-textarea"
+              name="textarea-name"
+              id="textarea-id-2"
+              placeholder="placeholder text"
+            ></textarea>
+
+            <div class="validation-message">
+              <p>error message here</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="site-wide site-wide--small">
+        <div class="block block--form">
+          <div class="block__header">
+            <p><strong>Form example - </strong>select</p>
+          </div>
+          <div class="field-container">
+            <label for="select-id" class="label">Label</label>
+            <select class="form-select" name="select-name" id="select-id">
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+              <option value="4">Option 4</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <section class="site-wide site-wide--small">
+        <div class="block block--form">
+          <div class="block__header">
+            <p><strong>Form example - </strong>select with validation</p>
+          </div>
+          <div class="field-container is-not-valid">
+            <label for="select-id" class="label">Label</label>
+            <select class="form-select" name="select-name" id="select-id">
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+              <option value="4">Option 4</option>
+            </select>
+
+            <div class="validation-message">
+              <p>error message here</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="site-wide site-wide--small">
+        <div class="block block--form">
+          <div class="block__header">
+            <p><strong>Form example - </strong>multiple input radio</p>
+          </div>
+
+          <div class="field-container">
+            <div class="radio">
+              <input
+                class="field-radio"
+                type="radio"
+                id="field-radio-id-1"
+                name="field-radio-name"
+                value="radio 1"
+              />
+              <label for="field-radio-id-1">
+                radio item 1
+              </label>
+            </div>
+            <div class="radio">
+              <input
+                class="field-radio"
+                type="radio"
+                id="field-radio-id-2"
+                name="field-radio-name"
+                value="radio 2"
+              />
+              <label for="field-radio-id-2">
+                radio item 2
+              </label>
+            </div>
+            <div class="radio">
+              <input
+                class="field-radio"
+                type="radio"
+                id="field-radio-id-3"
+                name="field-radio-name"
+                value="radio 3"
+              />
+              <label for="field-radio-id-3">
+                radio item 3
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="site-wide site-wide--small">
+        <div class="block block--form">
+          <div class="block__header">
+            <p><strong>Form example - </strong>input checkbox</p>
+          </div>
+
+          <div class="field-container">
+            <span class="checkbox">
+              <input
+                class="sr-only"
+                id="field-checkbox-id"
+                type="checkbox"
+                name="field-checkbox-name"
+              />
+              <label for="field-checkbox-id">
+                <span>
+                  checkbox item
+                </span>
+              </label>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="site-wide site-wide--small">
+        <div class="block block--form">
+          <div class="block__header">
+            <p><strong>Form example - </strong>multiple input checkbox</p>
+          </div>
+
+          <div class="field-container">
+            <span class="checkbox">
+              <input
+                class="sr-only"
+                id="field-checkbox-id-1"
+                type="checkbox"
+                name="field-checkbox-name"
+              />
+              <label for="field-checkbox-id-1">
+                <span>
+                  checkbox item 1
+                </span>
+              </label>
+            </span>
+            <span class="checkbox">
+              <input
+                class="sr-only"
+                id="field-checkbox-id-2"
+                type="checkbox"
+                name="field-checkbox-name"
+              />
+              <label for="field-checkbox-id-2">
+                <span>
+                  checkbox item 2
+                </span>
+              </label>
+            </span>
+            <span class="checkbox">
+              <input
+                class="sr-only"
+                id="field-checkbox-id-3"
+                type="checkbox"
+                name="field-checkbox-name"
+              />
+              <label for="field-checkbox-id-3">
+                <span>
+                  checkbox item 3
+                </span>
+              </label>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="site-wide site-wide--small">
+        <div class="block block--figure">
+          <div class="block__header">
+            <p><strong>Figure example</strong></p>
+          </div>
+        </div>
+
+        <figure>
+          <img src="https://picsum.photos/760/400" alt="Image in wysiwyg" />
+          <figcaption>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae
+            ipsam nesciunt optio ad deserunt iusto id quasi. Mollitia, debitis?
+            Quis.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="site-wide site-wide--small">
+        <div class="block block--table">
+          <div class="block__header">
+            <p><strong>Table example</strong></p>
+          </div>
+          <table class="table table--striped">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Rafaello</td>
+                <td>Vincent</td>
+                <td>rvincent0</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Cheston</td>
+                <td>Plitz</td>
+                <td>cplitz1</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Jonell</td>
+                <td>Hanmore</td>
+                <td>jhanmore2</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Teresa</td>
+                <td>Raselles</td>
+                <td>traselles3</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Christel</td>
+                <td>Abramsky</td>
+                <td>cabramsky4</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Stanleigh</td>
+                <td>Lattimer</td>
+                <td>slattimer5</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Erhard</td>
+                <td>McHan</td>
+                <td>emchan6</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Aveline</td>
+                <td>Busse</td>
+                <td>abusse7</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Murray</td>
+                <td>Baumann</td>
+                <td>mbaumann8</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Mord</td>
+                <td>Deplacido</td>
+                <td>mdeplacido9</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="site-wide site-wide--small">
+        <div class="block block--table">
+          <div class="block__header">
+            <p>
+              <strong>Table example - </strong>with scroll bar on small device
+            </p>
+          </div>
+          <div class="responsive-table">
+            <table class="table table--striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Rafaello</td>
+                  <td>Vincent</td>
+                  <td>rvincent0</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Cheston</td>
+                  <td>Plitz</td>
+                  <td>cplitz1</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Jonell</td>
+                  <td>Hanmore</td>
+                  <td>jhanmore2</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Teresa</td>
+                  <td>Raselles</td>
+                  <td>traselles3</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Christel</td>
+                  <td>Abramsky</td>
+                  <td>cabramsky4</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Stanleigh</td>
+                  <td>Lattimer</td>
+                  <td>slattimer5</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Erhard</td>
+                  <td>McHan</td>
+                  <td>emchan6</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Aveline</td>
+                  <td>Busse</td>
+                  <td>abusse7</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Murray</td>
+                  <td>Baumann</td>
+                  <td>mbaumann8</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Mord</td>
+                  <td>Deplacido</td>
+                  <td>mdeplacido9</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+// Convert the Photoshop / Adobe XD letter spacing value to CSS units.
+@function az-letter-spacing($value) {
+  @return ($value / 1000) * 1em;
+}
+
+// Get value from nested sass map.
+@function az-map-deep-get($map, $keys...) {
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
+}

@@ -1,0 +1,21 @@
+@use 'settings' as *;
+@use 'helpers/mixins' as mx;
+
+.wysiwyg {
+  p {
+    margin-bottom: 40px;
+
+    a {
+      color: $brand-primary;
+      text-decoration: none;
+    }
+  }
+
+  strong {
+    @include mx.az-font-weight(bold);
+  }
+
+  em {
+    font-style: italic;
+  }
+}

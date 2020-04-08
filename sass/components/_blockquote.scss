@@ -1,0 +1,47 @@
+@use 'settings' as *;
+
+.blockquote {
+  border-left: 4px solid $brand-primary;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  position: relative;
+  padding: 20px 25px 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  max-width: 800px;
+
+  @include mq(xl) {
+    padding: 20px 50px 20px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 22px;
+    font-style: italic;
+  }
+}
+
+.blockquote--mark {
+  padding: 35px 25px 20px;
+
+  @include mq(xl) {
+    padding: 70px 50px 20px;
+  }
+
+  .blockquote__inner {
+    position: relative;
+
+    &:before {
+      content: '\201C';
+      position: absolute;
+      top: -30px;
+      left: 0;
+      font-size: 42px;
+      line-height: 52px;
+    }
+  }
+}

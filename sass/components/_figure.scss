@@ -1,0 +1,29 @@
+@use 'settings' as *;
+
+figure {
+  margin-block-start: 0;
+  margin-block-end: 40px;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+
+  @include mq(lg) {
+    margin-bottom: 70px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+figcaption {
+  padding: 20px;
+  background-color: $brand-grey;
+  color: $brand-grey-medium;
+  font-size: 14px;
+  line-height: 20px;
+
+  a {
+    text-decoration: none;
+    color: currentColor;
+  }
+}

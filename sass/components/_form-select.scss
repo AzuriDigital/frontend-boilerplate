@@ -1,0 +1,31 @@
+@use 'settings' as *;
+@use 'helpers/mixins' as mx;
+@use 'components/form-core' as form;
+
+.form-select {
+  @include form.az-field-padding;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid $brand-grey-light;
+  width: 100%;
+  max-width: 300px;
+  background-image: url('~img/svg/icon-arrow-dropdown.svg');
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 15px);
+  @include mx.az-font-weight(regular);
+  transition: border .3s ease;
+  color: $brand-grey-dark;
+
+  &:focus {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid $brand-primary;
+  }
+}
+
+select::-ms-expand {
+  display: none;
+}

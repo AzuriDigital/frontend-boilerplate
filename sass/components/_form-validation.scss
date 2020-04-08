@@ -1,0 +1,30 @@
+@use 'settings' as *;
+@use 'helpers/mixins' as mx;
+
+.is-not-valid {
+  label,
+  .label {
+    color: $brand-error;
+  }
+
+  input,
+  select,
+  textarea {
+    border-color: $brand-error;
+  }
+}
+
+.validation-message {
+  p {
+    @include mx.az-font-weight(regular);
+    @include mx.az-letter-spacing(50);
+    margin-bottom: 0;
+    font-size: 10px;
+    text-align: left;
+    margin-top: 5px;
+
+    .is-not-valid & {
+      color: $brand-error;
+    }
+  }
+}

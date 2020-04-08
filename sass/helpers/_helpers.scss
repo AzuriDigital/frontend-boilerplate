@@ -1,0 +1,117 @@
+// Helper classes are defined in this file
+
+@use 'mixins' as mx;
+
+/*
+* Hide from both screenreaders and browsers: h5bp.com/u
+*/
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+* Hide only visually, but have it available for screenreaders: h5bp.com/v
+*/
+.sr-only {
+  @include mx.az-sr-only;
+}
+
+/*
+* Extends the .sr-only class to allow the element to be focusable
+* when navigated to via the keyboard: h5bp.com/p
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+* Hide visually and from screenreaders, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+* `contenteditable` attribute is included anywhere else in the document.
+* Otherwise it causes space to appear at the top and bottom of elements
+* that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+* `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: ' '; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+///
+/// Center Block
+///
+
+%center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-bold {
+  @include mx.az-font-weight(bold);
+}
+
+.text-small-print {
+  font-size: 11px;
+  line-height: 24px;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.reset-list {
+  @include mx.az-reset-list;
+}
+
+.inline-list {
+  @include mx.az-inline-list;
+}
+
+.responsive-wrapper {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+
+  iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+}
+
+.responsive-table {
+  overflow-x:auto;
+}

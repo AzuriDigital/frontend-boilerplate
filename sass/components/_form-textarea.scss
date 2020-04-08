@@ -1,0 +1,17 @@
+@use 'settings' as *;
+@use 'helpers/mixins' as mx;
+@use 'components/form-core' as form;
+
+.form-textarea {
+  @include mx.az-font-weight(regular);
+  @include form.az-field-padding;
+  font-family: $font-family-primary;
+  color: $brand-grey-medium;
+  border: none;
+  border-bottom: 1px solid $brand-grey-light;
+  width: 100%;
+  transition: border .3s ease;
+  color: $brand-grey-dark;
+  resize: vertical;
+  min-height: 130px;
+}

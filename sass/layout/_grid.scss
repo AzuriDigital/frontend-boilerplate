@@ -1,0 +1,68 @@
+// Add grid layouts in this partial.
+@use 'settings' as *;
+
+// $grid-demo-enable triggers the demo
+@if $grid-demo-enable {
+  .grid-col {
+    background-color: $brand-primary;
+    color: $brand-white;
+    text-align: center;
+  }
+}
+
+// .site-wide is used as a container for the grid or components
+.site-wide {
+	max-width: $site-width;
+	margin: 0 auto;
+	padding-left: $global-side-padding;
+	padding-right: $global-side-padding;
+	overflow: visible;
+}
+
+.site-wide--small {
+  max-width: $site-width-small;
+}
+
+// Grid
+.grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  margin-bottom: 40px;
+}
+
+// $grid-padding-enable triggers padding inside the grid column
+@if $grid-padding-enable {
+  .grid-col {
+    .spacer {
+      padding: 10px;
+    }
+  }
+}
+
+// Grid 2 columns
+.grid-cols-2 {
+  @include mq ( lg ) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+// Grid 3 columns
+.grid-cols-3 {
+  @include mq ( lg ) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+// Grid 4 columns
+.grid-cols-4 {
+  @include mq ( lg ) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+// Grid without gutter
+.grid-container--no-gutter {
+  grid-column-gap: 0;
+}

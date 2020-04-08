@@ -1,0 +1,25 @@
+@use 'settings' as *;
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+td, th {
+  border: 1px solid $brand-grey;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: $brand-grey;
+}
+
+.responsive-table {
+  overflow-x: auto;
+
+  table {
+    min-width: 500px;
+  }
+}
